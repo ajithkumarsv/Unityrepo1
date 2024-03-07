@@ -26,6 +26,7 @@ public class Player : MonoBehaviour {
     [SerializeField] float projectileFiringPeriod = 0.1f;
 
     [SerializeField] GameObject Shield;
+    [SerializeField] GameObject DeadParticles;
 
     Coroutine firingCoroutine;
 
@@ -78,7 +79,7 @@ public class Player : MonoBehaviour {
                 sr.DOColor(Color.yellow,0.2f).OnComplete(()=> { 
                     sr.color = Color.white;
                     //projectileFiringPeriod = (projectileFiringPeriod * 2);
-                }).SetLoops(10).OnComplete(() => {
+                }).SetLoops(20).OnComplete(() => {
                     sr.color = Color.white;
                     projectileFiringPeriod = (projectileFiringPeriod * 2);
                 });
@@ -138,6 +139,7 @@ public class Player : MonoBehaviour {
         //FindObjectOfType<Level>().LoadGameOver();
         //GameManager.Instance.GameplaySource.PlayerDead();
         this.enabled =false;
+        GameObject deadparticleset=Instantiate(DeadParticles,transform.position, transform.rotation);
         StartCoroutine(Stop());
         
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);   

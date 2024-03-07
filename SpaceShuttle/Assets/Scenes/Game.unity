@@ -393,6 +393,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1068900251721306, guid: 7a46ab0a9fe3c154682b9a88ddcee96f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4523329720533764, guid: 7a46ab0a9fe3c154682b9a88ddcee96f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -423,6 +427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4523329720533764, guid: 7a46ab0a9fe3c154682b9a88ddcee96f, type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82563006837546184, guid: 7a46ab0a9fe3c154682b9a88ddcee96f,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -555,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 114616730841044346, guid: bb243e839ca44e945bd0ff899d34c54f,
         type: 3}
       propertyPath: waveConfigs.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114616730841044346, guid: bb243e839ca44e945bd0ff899d34c54f,
         type: 3}
@@ -574,6 +583,18 @@ PrefabInstance:
       propertyPath: waveConfigs.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: 0edc5a5a7e975b8419718b37309a9077,
+        type: 2}
+    - target: {fileID: 114616730841044346, guid: bb243e839ca44e945bd0ff899d34c54f,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: f1aadb730f3fb0642adcefff1ad40f0b,
+        type: 2}
+    - target: {fileID: 114616730841044346, guid: bb243e839ca44e945bd0ff899d34c54f,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: c463346f4432da649b0034da18993fc4,
         type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1056,16 +1077,6 @@ PrefabInstance:
     - target: {fileID: 4829948843426110, guid: 66786f5f56011394cb155995dbacc2d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 198343335460220678, guid: 66786f5f56011394cb155995dbacc2d7,
-        type: 3}
-      propertyPath: UVModule.tilesX
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198343335460220678, guid: 66786f5f56011394cb155995dbacc2d7,
-        type: 3}
-      propertyPath: UVModule.enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

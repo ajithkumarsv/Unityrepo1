@@ -19,6 +19,7 @@ namespace GM
         {
             DeactivateAll();
             ActivateGameHandler();
+            gameUIHandler.InitValues();
         }
 
         public void DeactivateAll()

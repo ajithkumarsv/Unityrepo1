@@ -111,6 +111,8 @@ MonoBehaviour:
   projectileSpeed: 20
   projectileFiringPeriod: 0.05
   Shield: {fileID: 7861739387480503117}
+  DeadParticles: {fileID: 1368954464598970, guid: 334f3e6344827ea468077b5d60f1b84e,
+    type: 3}
 --- !u!60 &60935502408411400
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -34,6 +34,11 @@ namespace GM
         {
             base.Init();
             //timetext.text = "00";
+            
+        }
+
+        public void InitValues()
+        {
             scoretext.text = "000";
             ActivateObject.SetActive(false);
             healthImage.DOFillAmount(1, 1);
